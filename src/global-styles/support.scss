@@ -1,0 +1,126 @@
+.icon-10,
+.icon-11,
+.icon-12,
+.icon-13,
+.icon-14,
+.icon-15,
+.icon-16,
+.icon-18,
+.icon-20,
+.icon-22,
+.icon-24,
+.icon-28,
+.icon-32,
+.icon-40,
+.icon-60,
+.icon-80,
+.icon-90,
+.icon-100,
+.icon-150 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  height: 100%;
+  svg {
+    display: block;
+    width: 100%;
+    fill: currentColor;
+    height: 100%;
+    color: $baseRed;
+  }
+}
+
+.icon-10 {
+  width: 10px;
+  height: 10px;
+}
+.icon-11 {
+  width: 11px;
+  height: 11px;
+}
+.icon-12 {
+  width: 12px;
+  height: 12px;
+}
+.icon-13 {
+  width: 13px;
+  height: 13px;
+}
+.icon-14 {
+  width: 14px;
+  height: 14px;
+}
+.icon-15 {
+  width: 15px;
+  height: 15px;
+}
+.icon-16 {
+  width: 16px;
+  height: 16px;
+}
+.icon-18 {
+  width: 18px;
+  height: 18px;
+}
+.icon-20 {
+  width: 20px;
+  height: 20px;
+}
+.icon-22 {
+  width: 22px;
+  height: 22px;
+}
+.icon-24 {
+  width: 24px;
+  height: 24px;
+}
+.icon-28 {
+  width: 28px;
+  height: 28px;
+  svg {
+    color: $baseWhite;
+  }
+}
+.icon-32 {
+  width: 32px;
+  height: 32px;
+}
+.icon-40 {
+  width: 40px;
+  height: 40px;
+}
+.icon-60 {
+  width: 60px;
+  height: 60px;
+}
+.icon-80 {
+  width: 80px;
+  height: 80px;
+}
+.icon-90 {
+  width: 90px;
+  height: 90px;
+}
+.icon-100 {
+  width: 100px;
+  height: 100px;
+}
+.icon-100 {
+  width: 150px;
+  height: 150px;
+}
+.svg-icon-hide {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+.text-gray {
+  color: #575656 !important;
+}

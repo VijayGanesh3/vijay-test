@@ -1,0 +1,35 @@
+
+// base spectrum
+$baseBlack: black;
+$baseRed: #e03540;
+$baseYellow: rgb(255, 219, 10);
+$baseWhite: #fff;
+$baseAmber: #de8735;
+$baseWhite-transparant: rgba(255, 255, 255, 0.20);
+$card-bg-white: rgba(255, 255, 255, 0.15);
+$table-bg-white: rgba(255, 255, 255, 0.1);
+$text-color-white: #FFFFFF99;
+$input-bg: #FFFFFF1A ;
+
+//light theme
+$light-theme-darkgray:#34343E;
+$light-theme-text-color: black;
+$light-theme-border-color:rgba(112, 112, 112, 0.22);
+// yellow spectrum
+$lightYellow: #FFF6D6;
+$deepYellow: #FFD20A;
+
+// red spectrum
+$deepRed: #f90023;
+$warningRed: #a61d24;
+
+//grey spectrum
+$Grey: #707070;
+$lightGrey: #999999;
+$darkGrey: #282c34;
+
+$font-size-small: 12px;
+$font-size-base: $font-size-small +  2px;
+$font-size-lg: $font-size-base + 2px;
+$font-size-xl: $font-size-base + 4px;
+$font-size-xxl: $font-size-base + 6px;

@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('./assets/bg.jpg');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.light-theme {
+  background: #F4F5FE;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --amplify-primary-color: #FFD20A;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}

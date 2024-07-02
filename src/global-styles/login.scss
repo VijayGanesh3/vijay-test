@@ -1,0 +1,138 @@
+@import "./color-style.scss";
+
+
+.login-bg {
+    background-image: url('../assets/loginbg.png');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vh;
+    position: absolute;
+
+    &::before {
+        content: '';
+        background: transparent linear-gradient(100deg, #000000B0 0%, #0000001F 100%) 0% 0% no-repeat padding-box;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+.login-form {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    position: absolute;
+    right: 15%;
+
+    h1 {
+        color: $baseWhite;
+        font-weight: 500;
+    }
+
+    .login-form-forgot {
+        color: $baseWhite;
+        cursor: pointer;
+
+        &:hover {
+            color: $baseRed;
+        }
+    }
+
+    .fgt-pswd {
+        text-align: left;
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+
+    .ant-input {
+        height: 40px;
+        padding: 3px 18px;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 0;
+        margin: 10px;
+        width: 86%;
+        color: #ffffffb5;
+        font-size: 16px;
+
+        &:focus-visible {
+            outline: 1px solid #ffffffb5;
+        }
+
+    }
+
+
+
+    .login-form-button {
+        cursor: pointer;
+        width: 86%;
+        margin: 10px;
+        height: 40px;
+        padding: 6.5px 18px;
+        border-radius: 30px;
+        background: #ffffff00;
+        border: 1px solid $baseRed;
+        margin: 10px;
+        width: 96%;
+        font-weight: 600;
+        color: white;
+        font-size: 16px;
+
+        &.ant-btn:hover,
+        &.ant-btn:focus,
+        &.ant-btn:active {
+            color: white;
+            border-color: $baseRed;
+            background: $baseRed;
+            transition: .5s linear;
+        }
+    }
+
+    .resert-psw {
+
+        a,
+        p {
+            font-size: $font-size-lg;
+        }
+    }
+}
+
+.top-bar-input {
+    height: 32px;
+    border: none !important;
+    background: $input-bg;
+    border-radius: 20px;
+    min-width: 150px;
+    padding: 0 15px;
+
+    .ant-input {
+        border: none !important;
+        background: transparent !important;
+        // height: 32px;
+        border-radius: 0 !important;
+    }
+
+    .anticon-close {
+        font-size: 12px;
+    }
+
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+    box-shadow: none;
+}
+
+.very-number {
+    .ant-input {
+        width: 45px;
+        border-radius: 15px;
+    }
+}

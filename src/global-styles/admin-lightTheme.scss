@@ -1,0 +1,287 @@
+@import "./color-style.scss";
+@import "./support.scss";
+
+.light-theme {
+  .admin {
+    .masterEquipTable {
+      .ant-table-tbody {
+        tr.ant-table-row:nth-child(even) {
+          background: $baseWhite !important;
+        }
+
+        tr.ant-table-row:nth-child(odd) {
+          background: #dee2e6 !important;
+        }
+
+        tr:nth-child(even) td:last-child {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          background-color: $baseWhite !important;
+        }
+      }
+    }
+
+    .ant-select-arrow .anticon {
+      color: black;
+    }
+
+    .ant-tabs > .ant-tabs-nav .ant-tabs-nav-more {
+      color: $baseBlack;
+    }
+
+    .equipBtn {
+      &:hover,
+      &:active {
+        color: $light-theme-text-color;
+        background: transparent;
+      }
+    }
+
+    .maintenance_mng_Btn {
+      &:hover,
+      &:active {
+        color: $light-theme-text-color;
+        background: transparent;
+      }
+    }
+
+    .maintenance_tab {
+      .maintenance_header {
+        .maitenance_body {
+          background: #dee2e6;
+          // box-shadow: -1px 0px 3px #34343e;
+          box-shadow: 0px 2px 6px #00000033;
+
+          .intervals_header {
+            background: $baseWhite;
+
+            .interval_body {
+              .ant-menu {
+                background: $baseWhite;
+
+                .ant-menu-item {
+                  color: $light-theme-darkgray;
+                  font-weight: 600;
+
+                  &:hover {
+                    background: #dee2e6;
+                  }
+                }
+              }
+
+              .ant-menu {
+                .ant-menu-item-selected {
+                  background-color: #dee2e6;
+                  font-weight: 600;
+                  color: $baseRed;
+                }
+              }
+            }
+
+            .settings_interval {
+              .ant-typography {
+                color: $baseWhite !important;
+              }
+            }
+
+            .settings_interval_clicked {
+              background: $light-theme-darkgray;
+            }
+          }
+        }
+      }
+    }
+
+    .checksBody {
+      .ant-divider-horizontal.ant-divider-with-text {
+        border-top-color: $baseRed;
+      }
+
+      .addNewCheck:hover {
+        color: $baseRed;
+      }
+
+      .checksList .ant-list-items .ant-list-item {
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+
+    .equipmentsSno {
+      background: #dee2e6;
+
+      .divider {
+        border-top-color: $baseRed;
+      }
+
+      .checksList-equip {
+        .ant-list-items {
+          .ant-list-item {
+            border-bottom: 1px solid #ffffff;
+
+            .anticon {
+              font-size: 18px;
+              color: $baseRed;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .ant-collapse-expand-icon {
+          .anticon {
+            color: $light-theme-darkgray;
+          }
+        }
+
+        .ant-collapse-header-text {
+          color: $light-theme-text-color;
+        }
+
+        .ant-collapse-content {
+          .sno-table {
+            .ant-table-pagination.ant-pagination {
+              color: $light-theme-text-color;
+            }
+
+            .ant-pagination-prev,
+            .ant-pagination-next {
+              .anticon-left,
+              .anticon-right {
+                color: $light-theme-text-color;
+              }
+            }
+          }
+
+          .snoDetails_table {
+            .ant-table-tbody {
+              tr.ant-table-row:nth-child(even) {
+                background: $baseWhite !important;
+              }
+
+              tr.ant-table-row:nth-child(odd) {
+                background: #dee2e6 !important;
+              }
+
+              tr:nth-child(even) td:last-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                background-color: $baseWhite !important;
+              }
+
+              tr:nth-child(odd) td:last-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                background-color: #dee2e6 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    color: #6c757d !important;
+  }
+
+  button.ant-switch {
+    border: 2px solid $light-theme-border-color;
+  }
+
+  .ant-select-selection-search-input {
+    color: $light-theme-text-color !important;
+  }
+
+  .pictureIcon {
+    background: none;
+  }
+
+  .gradeOutPictureIcon {
+    background: none;
+  }
+
+  .ant-picker-time-panel-column
+    > li.ant-picker-time-panel-cell-selected
+    .ant-picker-time-panel-cell-inner {
+    background: $baseRed;
+    color: $light-theme-text-color;
+  }
+
+  .imagePreview {
+    a {
+      .anticon {
+        background: $baseWhite;
+      }
+    }
+  }
+
+  .ant-picker-input > input::placeholder,
+  .ant-picker-separator,
+  .ant-picker-time-panel-column
+    > li.ant-picker-time-panel-cell
+    .ant-picker-time-panel-cell-inner {
+    color: $Grey;
+  }
+
+  .weekDate {
+    color: $baseWhite !important;
+  }
+
+  .ant-picker-week-panel-row-selected td,
+  .ant-picker-week-panel-row-selected:hover td,
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+    background: $baseRed !important;
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-in-range::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+      .ant-picker-cell-range-start-single
+    )::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(
+      .ant-picker-cell-range-end-single
+    )::before {
+    background: gray !important;
+  }
+
+  .masterEquipTable_Pagination,
+  .addTeamDetails {
+    .anticon-right,
+    .anticon-left,
+    .ant-pagination-item {
+      color: $light-theme-text-color !important;
+    }
+
+    .ant-pagination-item-active {
+      color: $baseRed !important;
+    }
+
+    .ant-pagination-jump-next
+      .ant-pagination-item-container
+      .ant-pagination-item-ellipsis {
+      color: $baseRed !important;
+    }
+  }
+}
+
+.ant-picker-week-panel-row-selected td,
+.ant-picker-week-panel-row-selected:hover td,
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  background: $baseRed !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-in-range::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+    .ant-picker-cell-range-start-single
+  )::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(
+    .ant-picker-cell-range-end-single
+  )::before {
+  background: gray !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: 1px solid $baseRed;
+}
